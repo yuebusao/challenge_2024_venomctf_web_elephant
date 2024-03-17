@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>flag</title>
+</head>
+<body>
+
+<%
+// 字符串的拼接
+var finalName = "新年快乐，"  + name; // 对字符串进行拼接。name 变量来自于 Controller中对ModelAndView的填充
+%>
+<div>${finalName}</div>
+<div>作者:${@venom.elephantcms.common.FileUploadConstants.author()}</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ELEPHANTCMS</title>
+    <link rel="icon" href="../static/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/logo.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+            background-image: url("/bg1.jpg");
+            background-size:100% 100%;
+            background-attachment:fixed;
+        }
+        .login-wrapper {
+            background-color: bisque;
+            width: 25%;
+            height: 60%;
+            border-radius: 15px;
+            padding: 0 50px;
+            position: relative;
+            opacity: 0.8;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .header {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .input-item {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128,125,125);
+            font-size: 15px;
+            outline: none;
+        }
+        .input-item::placeholder {
+            text-transform: uppercase;
+        }
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px;
+            background-image: linear-gradient(to right,#a6c1ee, #fbc2eb);
+            color: #fff;
+        }
+        .msg {
+            text-align: center;
+            line-height: 88px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #abc1ee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">Login</div>
+            <div class="form-wrapper">
+                <form action="/" method="POST">
+                    <input class="input-item" type="text" name="username" placeholder="账号"><br>
+                    <input class="input-item" type="password" name="password" placeholder="密码">
+                    <input class="btn" type="submit">
+                </form>
+            </div>
+            <div class="msg">
+                ${state}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

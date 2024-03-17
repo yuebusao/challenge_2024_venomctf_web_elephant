@@ -1,0 +1,30 @@
+beetl:
+  templatesPath : templates
+  suffix : .btl
+#########################mybatis-plus####################################
+mybatis-plus:
+  mapper-locations : classpath:/mapper/*.xml
+  global-config.id-type : 0
+  global-config.field-strategy : 2
+  global-config.db-column-underline : true
+  global-config.refresh-mapper : true
+  global-config.logic-delete-value : 1
+  global-config.logic-not-delete-value : 0
+  configuration.map-underscore-to-camel-case : true
+  configuration.cache-enabled : false
+  configuration.jdbc-type-for-null : null
+  configuration.log-impl : org.apache.ibatis.logging.stdout.StdOutImpl
+
+spring:
+  servlet:
+    multipart:
+      enabled: false
+  datasource:
+    url : jdbc:mysql://localhost:3306/elephantcms?useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true&failOverReadOnly=false&allowMultiQueries=true&serverTimezone=CST
+    username : root
+    password : 123456
+    driver-class-name : com.mysql.jdbc.Driver
+
+ueditor:
+  rootPath : /ueditor
+  maxSize : 20480000

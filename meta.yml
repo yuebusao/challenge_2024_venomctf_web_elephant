@@ -1,0 +1,14 @@
+author:
+  name: squirt1e
+  contact: 1303516204@qq.com
+task:
+  name: challenge_2024_venomctf_web_archived-elephant
+  type: web
+  description: "本打算通过写一个CMS来学习java狠狠赚他一笔，但写到一半发现好像有漏洞。"
+  level: 困难
+  flag: "flag{oh_m3_uedit0r_an3_maybe_y0u_can_f1nd_s0me_0day}"
+  hints: ["思路不要局限于文件上传","都怪这个组件...虽然我也有问题:)","我重写了beetl的防护规则，无解的whitelist"]
+challenge:
+  name: "archived elephant"
+  refer: "无"
+  tags: ["JSON injection","0day","beetl","fastjson"]

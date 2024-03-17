@@ -1,0 +1,9 @@
+version: "3"
+services:
+  challenge:
+    build: .
+    image: challenge_2024_venomctf_web_archived-elephant
+    ports:
+    - 10800:8080
+    environment:
+    - FLAG=flag{oh_m3_ued1t0r_an3_may_be_y0u_can_f1nd_s0m3_0day}
